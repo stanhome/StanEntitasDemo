@@ -6,38 +6,23 @@
 //     the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-public static class InputComponentsLookup {
+public static class UiComponentsLookup {
 
     public const int AssignView = 0;
     public const int Destroyed = 1;
-    public const int LeftMouse = 2;
-    public const int MouseDown = 3;
-    public const int MousePosition = 4;
-    public const int MouseUp = 5;
-    public const int RightMouse = 6;
-    public const int T3View = 7;
+    public const int T3View = 2;
 
-    public const int TotalComponents = 8;
+    public const int TotalComponents = 3;
 
     public static readonly string[] componentNames = {
         "AssignView",
         "Destroyed",
-        "LeftMouse",
-        "MouseDown",
-        "MousePosition",
-        "MouseUp",
-        "RightMouse",
         "T3View"
     };
 
     public static readonly System.Type[] componentTypes = {
         typeof(AssignViewComponent),
         typeof(DestroyedComponent),
-        typeof(LeftMouseComponent),
-        typeof(MouseDownComponent),
-        typeof(MousePositionComponent),
-        typeof(MouseUpComponent),
-        typeof(RightMouseComponent),
         typeof(T3ViewComponent)
     };
 }

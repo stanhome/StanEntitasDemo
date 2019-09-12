@@ -8,20 +8,25 @@
 //------------------------------------------------------------------------------
 public static class GameComponentsLookup {
 
-    public const int DebugMessage = 0;
-    public const int Direction = 1;
-    public const int MoveComplete = 2;
-    public const int Move = 3;
-    public const int Mover = 4;
-    public const int Position = 5;
-    public const int Scale = 6;
-    public const int Sprite = 7;
-    public const int View = 8;
+    public const int AssignView = 0;
+    public const int DebugMessage = 1;
+    public const int Destroyed = 2;
+    public const int Direction = 3;
+    public const int MoveComplete = 4;
+    public const int Move = 5;
+    public const int Mover = 6;
+    public const int Position = 7;
+    public const int Scale = 8;
+    public const int Sprite = 9;
+    public const int T3View = 10;
+    public const int View = 11;
 
-    public const int TotalComponents = 9;
+    public const int TotalComponents = 12;
 
     public static readonly string[] componentNames = {
+        "AssignView",
         "DebugMessage",
+        "Destroyed",
         "Direction",
         "MoveComplete",
         "Move",
@@ -29,11 +34,14 @@ public static class GameComponentsLookup {
         "Position",
         "Scale",
         "Sprite",
+        "T3View",
         "View"
     };
 
     public static readonly System.Type[] componentTypes = {
+        typeof(AssignViewComponent),
         typeof(DebugMessageComponent),
+        typeof(DestroyedComponent),
         typeof(DirectionComponent),
         typeof(MoveCompleteComponent),
         typeof(MoveComponent),
@@ -41,6 +49,7 @@ public static class GameComponentsLookup {
         typeof(PositionComponent),
         typeof(ScaleComponent),
         typeof(SpriteComponent),
+        typeof(T3ViewComponent),
         typeof(ViewComponent)
     };
 }
