@@ -9,19 +9,23 @@
 public static class InputComponentsLookup {
 
     public const int AssignView = 0;
-    public const int Destroyed = 1;
-    public const int LeftMouse = 2;
-    public const int MouseDown = 3;
-    public const int MousePosition = 4;
-    public const int MouseUp = 5;
-    public const int RightMouse = 6;
-    public const int T3View = 7;
+    public const int Click = 1;
+    public const int Destroyed = 2;
+    public const int InputId = 3;
+    public const int LeftMouse = 4;
+    public const int MouseDown = 5;
+    public const int MousePosition = 6;
+    public const int MouseUp = 7;
+    public const int RightMouse = 8;
+    public const int T3View = 9;
 
-    public const int TotalComponents = 8;
+    public const int TotalComponents = 10;
 
     public static readonly string[] componentNames = {
         "AssignView",
+        "Click",
         "Destroyed",
+        "InputId",
         "LeftMouse",
         "MouseDown",
         "MousePosition",
@@ -32,7 +36,9 @@ public static class InputComponentsLookup {
 
     public static readonly System.Type[] componentTypes = {
         typeof(AssignViewComponent),
+        typeof(ClickComponent),
         typeof(DestroyedComponent),
+        typeof(InputIdComponent),
         typeof(LeftMouseComponent),
         typeof(MouseDownComponent),
         typeof(MousePositionComponent),

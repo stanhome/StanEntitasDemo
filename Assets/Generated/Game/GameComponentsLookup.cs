@@ -9,28 +9,32 @@
 public static class GameComponentsLookup {
 
     public const int AssignView = 0;
-    public const int DebugMessage = 1;
-    public const int Destroyed = 2;
-    public const int Direction = 3;
-    public const int MoveComplete = 4;
-    public const int Move = 5;
-    public const int Mover = 6;
-    public const int Position = 7;
-    public const int Scale = 8;
-    public const int Sprite = 9;
-    public const int T3View = 10;
-    public const int View = 11;
+    public const int ButtonState = 1;
+    public const int DebugMessage = 2;
+    public const int Destroyed = 3;
+    public const int Direction = 4;
+    public const int MoveComplete = 5;
+    public const int Move = 6;
+    public const int Mover = 7;
+    public const int Name = 8;
+    public const int Position = 9;
+    public const int Scale = 10;
+    public const int Sprite = 11;
+    public const int T3View = 12;
+    public const int View = 13;
 
-    public const int TotalComponents = 12;
+    public const int TotalComponents = 14;
 
     public static readonly string[] componentNames = {
         "AssignView",
+        "ButtonState",
         "DebugMessage",
         "Destroyed",
         "Direction",
         "MoveComplete",
         "Move",
         "Mover",
+        "Name",
         "Position",
         "Scale",
         "Sprite",
@@ -40,12 +44,14 @@ public static class GameComponentsLookup {
 
     public static readonly System.Type[] componentTypes = {
         typeof(AssignViewComponent),
+        typeof(ButtonStateComponent),
         typeof(DebugMessageComponent),
         typeof(DestroyedComponent),
         typeof(DirectionComponent),
         typeof(MoveCompleteComponent),
         typeof(MoveComponent),
         typeof(MoverComponent),
+        typeof(NameComponent),
         typeof(PositionComponent),
         typeof(ScaleComponent),
         typeof(SpriteComponent),
